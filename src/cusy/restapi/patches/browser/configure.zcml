@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="cusy.restapi.patches">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="cusy.restapi.patches.interfaces.ICusyRestapiPatchesLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="cusy.restapi.patches"
+      type="plone"
+      directory="static"
+      />
+
+</configure>
