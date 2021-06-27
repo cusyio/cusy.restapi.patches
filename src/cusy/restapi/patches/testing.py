@@ -28,24 +28,24 @@ class CusyRestapiPatchesLayer(PloneSandboxLayer):
         applyProfile(portal, 'cusy.restapi.patches:default')
 
 
-CUSY_RESTAPI_PATCHES_FIXTURE = CusyRestapiPatchesLayer()
+FIXTURE = CusyRestapiPatchesLayer()
 
 
-CUSY_RESTAPI_PATCHES_INTEGRATION_TESTING = IntegrationTesting(
-    bases=(CUSY_RESTAPI_PATCHES_FIXTURE,),
+INTEGRATION_TESTING = IntegrationTesting(
+    bases=(FIXTURE,),
     name='CusyRestapiPatchesLayer:IntegrationTesting',
 )
 
 
-CUSY_RESTAPI_PATCHES_FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(CUSY_RESTAPI_PATCHES_FIXTURE,),
+FUNCTIONAL_TESTING = FunctionalTesting(
+    bases=(FIXTURE,),
     name='CusyRestapiPatchesLayer:FunctionalTesting',
 )
 
 
-CUSY_RESTAPI_PATCHES_ACCEPTANCE_TESTING = FunctionalTesting(
+ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
-        CUSY_RESTAPI_PATCHES_FIXTURE,
+        FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),

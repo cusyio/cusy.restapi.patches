@@ -10,7 +10,7 @@
 #
 # 1) Start robot server:
 #
-# $ bin/robot-server --reload-path src cusy.restapi.patches.testing.CUSY_RESTAPI_PATCHES_ACCEPTANCE_TESTING
+# $ bin/robot-server --reload-path src cusy.restapi.patches.testing.ACCEPTANCE_TESTING
 #
 # 2) Run robot tests:
 #

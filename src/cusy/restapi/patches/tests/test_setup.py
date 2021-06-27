@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
-from cusy.restapi.patches.testing import (
-    CUSY_RESTAPI_PATCHES_INTEGRATION_TESTING  # noqa: E501,
-)
+from cusy.restapi.patches.testing import INTEGRATION_TESTING
 from plone import api
 from plone.app.testing import setRoles, TEST_USER_ID
 
@@ -18,7 +16,7 @@ except ImportError:
 class TestSetup(unittest.TestCase):
     """Test that cusy.restapi.patches is properly installed."""
 
-    layer = CUSY_RESTAPI_PATCHES_INTEGRATION_TESTING
+    layer = INTEGRATION_TESTING
 
     def setUp(self):
         """Custom shared utility setup for tests."""
@@ -45,7 +43,7 @@ class TestSetup(unittest.TestCase):
 
 class TestUninstall(unittest.TestCase):
 
-    layer = CUSY_RESTAPI_PATCHES_INTEGRATION_TESTING
+    layer = INTEGRATION_TESTING
 
     def setUp(self):
         self.portal = self.layer['portal']
