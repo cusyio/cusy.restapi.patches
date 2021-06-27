@@ -21,11 +21,12 @@ class CusyRestapiPatchesLayer(PloneSandboxLayer):
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
         import plone.restapi
+
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=cusy.restapi.patches)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'cusy.restapi.patches:default')
+        applyProfile(portal, "cusy.restapi.patches:default")
 
 
 FIXTURE = CusyRestapiPatchesLayer()
@@ -33,13 +34,13 @@ FIXTURE = CusyRestapiPatchesLayer()
 
 INTEGRATION_TESTING = IntegrationTesting(
     bases=(FIXTURE,),
-    name='CusyRestapiPatchesLayer:IntegrationTesting',
+    name="CusyRestapiPatchesLayer:IntegrationTesting",
 )
 
 
 FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(FIXTURE,),
-    name='CusyRestapiPatchesLayer:FunctionalTesting',
+    name="CusyRestapiPatchesLayer:FunctionalTesting",
 )
 
 
@@ -49,5 +50,5 @@ ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='CusyRestapiPatchesLayer:AcceptanceTesting',
+    name="CusyRestapiPatchesLayer:AcceptanceTesting",
 )

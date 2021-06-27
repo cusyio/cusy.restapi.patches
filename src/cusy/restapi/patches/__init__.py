@@ -3,4 +3,4 @@
 from zope.i18nmessageid import MessageFactory
 
 
-_ = MessageFactory('cusy.restapi.patches')
+_ = MessageFactory("cusy.restapi.patches")
