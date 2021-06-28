@@ -3,6 +3,8 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="cusy.restapi.patches">
 
+  <!-- Patches for existing REST-API services. -->
+  <include package=".services" />
 
   <include file="profiles.zcml" />
 
