@@ -33,8 +33,11 @@ Patches and fixes for plone.restapi which are not yet released.
 Patches
 -------
 
-- Navigation endpoint should sort by object position in parent
+- Navigation endpoint should sort by object position in parent:
   https://github.com/plone/plone.restapi/issues/1107
+
+- Layout based serialization, include default_page in serialization:
+  https://github.com/plone/plone.restapi/pull/944
 
 
 Installation

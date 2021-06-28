@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <plone:service
+      factory=".get.ContentGet"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      layer="cusy.restapi.patches.interfaces.ICusyRestapiPatchesLayer"
+      method="GET"
+      permission="zope2.View"
+      />
+
+  <plone:service
+      factory=".get.ContentGet"
+      for="Products.CMFCore.interfaces.IContentish"
+      layer="cusy.restapi.patches.interfaces.ICusyRestapiPatchesLayer"
+      method="GET"
+      permission="zope2.View"
+      />
+
+</configure>

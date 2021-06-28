@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <!-- A custom serializer for default pages for folders. -->
+  <adapter
+      factory=".dxcontent.DefaultPageSerializeFolderToJson"
+      />
+
+  <!-- A custom serializer for default pages for the site root. -->
+  <adapter
+      factory=".site.DefaultPageSerializeSiteRootToJson"
+      />
+
+</configure>

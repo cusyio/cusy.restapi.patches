@@ -23,10 +23,10 @@ class CusyNavigation(Navigation):
     @property
     @memoize
     def navtree(self):
-        """Patched version of the navigation serice.
+        """Patched version of the navigation service.
 
-        Once https://github.com/plone/plone.restapi/issues/1107 is fixed, this can be
-        removed.
+        Once https://github.com/plone/plone.restapi/issues/1107 is fixed, this
+        can be removed.
         """
         ret = defaultdict(list)
         navtree_path = self.navtree_path
