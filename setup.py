@@ -16,7 +16,7 @@ long_description = "\n\n".join(
 setup(
     name="cusy.restapi.patches",
     version="1.0.0.dev0",
-    description="Patches and fixes which are not yet released in plone.restapi.",
+    description="Patches and fixes for plone.restapi which are not yet released.",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
     classifiers=[
@@ -32,11 +32,11 @@ setup(
     keywords="Python Plone CMS",
     author="Thomas Massmann",
     author_email="thomas.massmann@it-spir.it",
-    url="https://github.com/collective/cusy.restapi.patches",
+    url="https://github.com/cusyio/cusy.restapi.patches",
     project_urls={
         "PyPI": "https://pypi.python.org/pypi/cusy.restapi.patches",
-        "Source": "https://github.com/collective/cusy.restapi.patches",
-        "Tracker": "https://github.com/collective/cusy.restapi.patches/issues",
+        "Source": "https://github.com/cusyio/cusy.restapi.patches",
+        "Tracker": "https://github.com/cusyio/cusy.restapi.patches/issues",
         # 'Documentation': 'https://cusy.restapi.patches.readthedocs.io/en/latest/',
     },
     license="GPL version 2",
