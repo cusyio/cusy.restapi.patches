@@ -10,9 +10,11 @@ from plone.restapi.services import Service
 from plone.restapi.services.navigation.get import Navigation
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
-from zope.component import adapter, getUtility
+from zope.component import adapter
+from zope.component import getUtility
 from zope.i18n import translate
-from zope.interface import implementer, Interface
+from zope.interface import implementer
+from zope.interface import Interface
 
 
 @implementer(IExpandableElement)

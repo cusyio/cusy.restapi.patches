@@ -2,7 +2,8 @@
 """Setup tests for this package."""
 from cusy.restapi.patches.testing import INTEGRATION_TESTING
 from plone import api
-from plone.app.testing import setRoles, TEST_USER_ID
+from plone.app.testing import setRoles
+from plone.app.testing import TEST_USER_ID
 
 import unittest
 
