@@ -1,6 +1,5 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="cusy.restapi.patches">
 
   <!-- Patches for existing REST-API services. -->
