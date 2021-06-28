@@ -2,11 +2,11 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on pypi or github. It is a comment.
 
-.. image:: https://travis-ci.org/collective/cusy.restapi.patches.svg?branch=master
-    :target: https://travis-ci.org/collective/cusy.restapi.patches
+.. image:: https://github.com/cusyio/cusy.restapi.patches/workflows/ci/badge.svg
+    :target: https://github.com/cusyio/cusy.restapi.patches/actions
 
-.. image:: https://coveralls.io/repos/github/collective/cusy.restapi.patches/badge.svg?branch=master
-    :target: https://coveralls.io/github/collective/cusy.restapi.patches?branch=master
+.. image:: https://coveralls.io/repos/github/cusyio/cusy.restapi.patches/badge.svg?branch=master
+    :target: https://coveralls.io/github/cusyio/cusy.restapi.patches?branch=master
     :alt: Coveralls
 
 .. image:: https://img.shields.io/pypi/v/cusy.restapi.patches.svg
@@ -28,39 +28,19 @@
 cusy.restapi.patches
 ====================
 
-Tell me what your product does
+Patches and fixes for plone.restapi which are not yet released.
 
-Features
---------
+Patches
+-------
 
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+- Navigation endpoint should sort by object position in parent
+  https://github.com/plone/plone.restapi/issues/1107
 
 
 Installation
 ------------
 
-Install cusy.restapi.patches by adding it to your buildout::
+Install ``cusy.restapi.patches`` by adding it to your buildout::
 
     [buildout]
 
@@ -76,16 +56,14 @@ and then running ``bin/buildout``
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/cusy.restapi.patches/issues
-- Source Code: https://github.com/collective/cusy.restapi.patches
-- Documentation: https://docs.plone.org/foo/bar
+- Issue Tracker: https://github.com/cusyio/cusy.restapi.patches/issues
+- Source Code: https://github.com/cusyio/cusy.restapi.patches
 
 
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+If you are having issues, please let us know by adding a new ticket.
 
 
 License
