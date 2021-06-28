@@ -5,8 +5,8 @@
 .. image:: https://github.com/cusyio/cusy.restapi.patches/workflows/ci/badge.svg
     :target: https://github.com/cusyio/cusy.restapi.patches/actions
 
-.. image:: https://coveralls.io/repos/github/cusyio/cusy.restapi.patches/badge.svg?branch=master
-    :target: https://coveralls.io/github/cusyio/cusy.restapi.patches?branch=master
+.. image:: https://coveralls.io/repos/github/cusyio/cusy.restapi.patches/badge.svg?branch=main
+    :target: https://coveralls.io/github/cusyio/cusy.restapi.patches?branch=main
     :alt: Coveralls
 
 .. image:: https://img.shields.io/pypi/v/cusy.restapi.patches.svg
