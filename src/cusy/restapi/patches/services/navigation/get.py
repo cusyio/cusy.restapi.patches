@@ -44,12 +44,12 @@ class CusyNavigation(Navigation):
             else:
                 entry["review_state"] = None
 
-            if "title" not in entry:
+            if "title" not in tab:
                 entry["title"] = tab.get("name") or tab.get("description") or tab["id"]
             else:
-                # translate Home tab
+                # translate configured tab
                 entry["title"] = translate(
-                    entry["title"], domain="plone", context=self.request
+                    tab["title"], domain="plone", context=self.request
                 )
 
             entry["title"] = safe_unicode(entry["title"])
