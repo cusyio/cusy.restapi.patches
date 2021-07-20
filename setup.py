@@ -49,6 +49,8 @@ setup(
     python_requires=">=3.6",
     install_requires=[
         "setuptools",
+        "collective.monkeypatcher",
+        "plone.rest",
         "plone.restapi",
     ],
     extras_require={

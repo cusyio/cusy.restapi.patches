@@ -1,0 +1,17 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    i18n_domain="cusy.restapi.patches">
+
+  <include package="collective.monkeypatcher" />
+
+  <monkey:patch
+      class="plone.rest.service.Service"
+      description="Set site context before rest call."
+      handler=".rest_service.customPatchHandler"
+      original="__call__"
+      preserveOriginal="true"
+      replacement=".rest_service.__call__"
+      />
+
+</configure>

@@ -2,6 +2,8 @@
     xmlns="http://namespaces.zope.org/zope"
     i18n_domain="cusy.restapi.patches">
 
+  <include file="monkeypatches.zcml" />
+
   <!-- Patches for existing REST-API services. -->
   <include package=".serializer" />
   <include package=".services" />
