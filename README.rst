@@ -34,6 +34,9 @@ Patches and fixes for plone.restapi which are not yet released.
 Patches
 -------
 
+- Set site before any rest service call.
+  This is required so that all utility calls, e.g. for the config registry, take the correct site context, e.g. when working with sub sites.
+
 - Navigation endpoint should sort by object position in parent:
   https://github.com/plone/plone.restapi/issues/1107
 
