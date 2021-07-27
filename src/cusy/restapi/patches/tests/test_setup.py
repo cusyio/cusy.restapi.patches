@@ -29,7 +29,7 @@ class TestSetup(unittest.TestCase):
 
     def test_product_installed(self):
         """Test if cusy.restapi.patches is installed."""
-        self.assertTrue(self.installer.isProductInstalled("cusy.restapi.patches"))
+        self.assertTrue(self.installer.is_product_installed("cusy.restapi.patches"))
 
     def test_browserlayer(self):
         """Test that ICusyRestapiPatchesLayer is registered."""
@@ -51,12 +51,12 @@ class TestUninstall(unittest.TestCase):
             self.installer = api.portal.get_tool("portal_quickinstaller")
         roles_before = api.user.get_roles(TEST_USER_ID)
         setRoles(self.portal, TEST_USER_ID, ["Manager"])
-        self.installer.uninstallProducts(["cusy.restapi.patches"])
+        self.installer.uninstall_product("cusy.restapi.patches")
         setRoles(self.portal, TEST_USER_ID, roles_before)
 
     def test_product_uninstalled(self):
         """Test if cusy.restapi.patches is cleanly uninstalled."""
-        self.assertFalse(self.installer.isProductInstalled("cusy.restapi.patches"))
+        self.assertFalse(self.installer.is_product_installed("cusy.restapi.patches"))
 
     def test_browserlayer_removed(self):
         """Test that ICusyRestapiPatchesLayer is removed."""
