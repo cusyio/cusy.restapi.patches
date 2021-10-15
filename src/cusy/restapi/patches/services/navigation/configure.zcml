@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <adapter
+      factory=".get.CusyNavigation" name="navigation"
+      />
+
+  <plone:service
+      factory=".get.CusyNavigationGet"
+      for="zope.interface.Interface"
+      layer="cusy.restapi.patches.interfaces.ICusyRestapiPatchesLayer"
+      method="GET"
+      name="@navigation"
+      permission="zope2.View"
+      />
+
+</configure>

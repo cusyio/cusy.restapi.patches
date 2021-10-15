@@ -51,7 +51,7 @@ setup(
         "setuptools",
         "collective.monkeypatcher",
         "plone.rest",
-        "plone.restapi>=8.3.2",
+        "plone.restapi",
     ],
     extras_require={
         "test": [
