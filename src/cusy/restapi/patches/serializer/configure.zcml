@@ -12,4 +12,7 @@
       factory=".site.DefaultPageSerializeSiteRootToJson"
       />
 
+  <adapter
+      factory=".dxfields.PatchedTextLineFieldSerializer" />
+
 </configure>
