@@ -41,7 +41,9 @@ class DefaultPageSerializeFolderToJson(SerializeFolderToJson):
                     serializer = getMultiAdapter(
                         (child, self.request), ISerializeToJson
                     )
+                    default_page_url = self.context.absolute_url() + "/" + default_page
                     default_page_data = serializer()
+                    default_page_data["@id"] = default_page_url
                 except AttributeError:
                     print(
                         "Error while generating default page for {0}".format(
